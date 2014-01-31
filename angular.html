@@ -8,19 +8,17 @@
 </head>
 <body>
 	<div ng-app="myApp">
-		<button my-directive>Click!</button>
-		<a href="#" my-directive>Click me too!</a>
-		<br>
-		<h1>Hello World.</h1>
-		<input type="text" ng-model="myVar"> <!-- ng-model binds input value to data source value, both ways -->
-		<p>{{ myVar }}</p>
+		<input type="text" ng-model="searchText">
+		<ul ng-init="people = ['Seth Etter', 'George Washington', 'Abe Lincoln']">
+			<li ng-repeat="person in people | filter:searchText">{{ person | shout }}</li>
+		</ul>
 	</div>
 
 	<script>
 		var app = angular.module('myApp', []);
-		app.directive('myDirective', function() {
-			return function (scope, element, attrs) {
-				element.bind('click', function() { alert('click') });
+		app.filter('shout', function() {
+			return function(input) {
+				return input + '!';
 			};
 		});
 	</script>
