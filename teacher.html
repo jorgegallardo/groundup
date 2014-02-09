@@ -1,0 +1,99 @@
+<!DOCTYPE html>
+<html>
+<head>
+	<title>Teacher Questions</title>
+	<meta charset="utf-8">
+	<meta name="viewport" content="width=device-width, initial-scale=1.0">
+	<link href="css/bootstrap.css" rel="stylesheet" media="screen">
+	<link href="font-awesome-4.0.3/css/font-awesome.min.css" rel="stylesheet">
+</head>
+<body>
+<br>
+<div class="container">
+<h2>Teacher Question Input</h2>
+    <div class="row">
+        <div class="col-sm-4">
+            <div class="panel panel-default">
+                <div class="panel-heading text-center"><h3 class="panel-title">UNIT</h3></div>
+                    <div class="list-group">
+                        <a class="list-group-item">1 - The Scientific Method<span class="badge">3 lessons</span></a>
+                        <a class="list-group-item">2 - Cells<span class="badge">3 lessons</span></a>
+                        <a class="list-group-item">3 - Transport<span class="badge">3 lessons</span></a>
+                        <a class="list-group-item active">+ ADD UNIT</a>
+                    </div>
+            </div>
+            <br>
+        </div>
+        <div class="col-sm-8">
+            <div class="btn-toolbar" role="lessonToolbar">
+                <div class="panel panel-default">
+                    <div class="panel-heading text-center"><h3 class="panel-title">LESSON - AIM</h3></div>
+                    <div class="list-group">
+                        <a class="list-group-item">101 - What is love?<span class="badge">12 questions</span></a>
+                        <a class="list-group-item">102 - Baby don't hurt me?<span class="badge">12 questions</span></a>
+                        <a class="list-group-item">103 - Don't hurt me?<span class="badge">12 questions</span></a>
+                        <a class="list-group-item active">+ ADD LESSON</a>
+                    </div>
+                </div>
+            </div>
+        </div>
+    </div> <!-- row -->
+    <div class="row">
+        <div class="col-sm-12">
+                    <h1>Lesson 5 Question Input</h1>
+                    <p class="help-block">Type in your question in the space below.</p>
+                    <textarea class="form-control" rows="3"></textarea>
+                    <br> <!-- with css, i think i can get the spacing to look right, instead of using br -->
+                    <div class="form-actions btn-group pull-right">
+                        <button class="btn btn-default">CANCEL</button>
+                        <button class="btn btn-primary">ADD QUESTION</button>
+                    </div>
+        </div> 
+    </div> <!-- row -->
+</div> <!-- container -->
+
+
+
+    <div class="container">
+        <div class="row">
+            <div class="col-sm-12">
+                <h1>Lesson 5 Question List</h1>
+                <table class="table table-hover table-condensed">
+                    <thead>
+                        <tr>
+                            <th>#</th>
+                            <th>Questions</th>
+                            <th>Options</th>
+                        </tr>
+                    </thead>
+                    <tbody>
+                        <tr>
+                            <td>1</td>
+                            <td>How do plants suck dick?</td>
+                            <td>
+                                <div class="btn-group">
+                                    <button type="button" class="btn btn-sm btn-default">Edit</button>
+                                    <button type="button" class="btn btn-sm btn-danger">Delete</button>
+                                </div>
+                            </td>
+                        </tr>
+                        <tr>
+                            <td>2</td>
+                            <td>How do animals suck dick?</td>
+                            <td>
+                                <div class="btn-group">
+                                    <button type="button" class="btn btn-sm btn-default">Edit</button>
+                                    <button type="button" class="btn btn-sm btn-danger">Delete</button>
+                                </div>
+                            </td>
+                        </tr>
+                    </tbody>
+                </table>
+            </div>
+        </div>
+    </div>
+
+	<script src="js/jquery.js"></script>
+	<script src="js/bootstrap.js"></script>
+</body>
+</html>
